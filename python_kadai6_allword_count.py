@@ -11,6 +11,6 @@ with open(text,'r') as file:
 
   for line in file:
    words = tagger.parse(line).split(' ')
-   textFleq += (int(len(words)))
+   textFleq += len(words)
   print(textFleq)
 
